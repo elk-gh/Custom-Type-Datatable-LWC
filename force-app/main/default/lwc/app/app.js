@@ -40,13 +40,16 @@ export default class App extends LightningElement {
         { label: 'Website', fieldName: 'website', type: 'url', iconName: 'custom:custom20' },
     ];
     progressExampleData = [
-        {Id: 1, progress: 20, name: 'Google', website: 'https://google.com'},
-        {Id: 2, progress: 40, name: 'Facebook', website: 'https://facebook.com'},
-        {Id: 3, progress: 60, name: 'DevLife', website: 'https://devlife.tech'},
-        {Id: 4, progress: 80, name: 'Gmail', website: 'https://gmail.com'}
+        {Id: 1, progress: 20, name: 'Google', website: 'https://google.com', variant : 'warning'},
+        {Id: 2, progress: 40, name: 'Facebook', website: 'https://facebook.com', variant : 'base'},
+        {Id: 3, progress: 60, name: 'DevLife', website: 'https://devlife.tech', variant : 'expired'},
+        {Id: 4, progress: 80, name: 'Gmail', website: 'https://gmail.com', variant : 'base-autocomplete'}
     ];
     progressExampleColumns = [
-        { label: 'Progress', fieldName: 'progress', type: 'progressIndicator'},
+        { label: 'Progress', fieldName: 'progress', type: 'progressIndicator',
+        typeAttributes: { 
+            variant: { fieldName: 'variant' }, 
+        }},
         { label: 'Service', fieldName: 'name', iconName: 'custom:custom18' },
         { label: 'Website', fieldName: 'website', type: 'url', iconName: 'custom:custom20' },
     ];

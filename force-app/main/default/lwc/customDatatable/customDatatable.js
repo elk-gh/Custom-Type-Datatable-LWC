@@ -24,7 +24,7 @@ export default class CustomDatatable extends LightningDatatable {
         progressIndicator: {
             template: progressIndicatorColumnTemplate,
             standardCellLayout: true,
-            typeAttributes: [''],
+            typeAttributes: ['variant'],
         },
     };
 }
