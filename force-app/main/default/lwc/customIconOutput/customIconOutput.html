@@ -1,0 +1,12 @@
+<template>
+    <template if:true={isImage}>
+        <p class="slds-truncate slds-p-horizontal_x-small">
+            <img src={getUrlValue} class="image" alt={getUrlValue}/>
+        </p>
+    </template>
+    <template if:true={isIcon}>
+        <span class="slds-truncate slds-p-horizontal_x-small">
+            <lightning-icon icon-name={getIconValue} alternative-text={getIconValue} size="small"></lightning-icon>
+        </span>
+    </template>
+</template>

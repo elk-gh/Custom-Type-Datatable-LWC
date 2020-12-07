@@ -1,0 +1,38 @@
+<template>
+    <div class="slds-p-around_x-small">
+        <c-custom-datatable
+            key-field="Id"
+            data={toggleExampleData}
+            hide-checkbox-column
+            columns={toggleExampleColumns}
+            onselectedrec={handleSelectedRec}>
+        </c-custom-datatable> 
+    </div>
+    <div class="slds-p-around_x-small">
+        <c-custom-datatable
+            key-field="Id"
+            data={iconExampleData}
+            hide-checkbox-column
+            columns={iconExampleColumns}
+            onselectedrec={handleSelectedRec}>
+        </c-custom-datatable> 
+    </div>
+    <div class="slds-p-around_x-small">
+        <c-custom-datatable
+            key-field="Id"
+            data={richTextExampleData}
+            hide-checkbox-column
+            columns={richTextExampleColumns}
+            onselectedrec={handleSelectedRec}>
+        </c-custom-datatable> 
+    </div>
+    <div class="slds-p-around_x-small">
+        <c-custom-datatable
+            key-field="Id"
+            data={progressExampleData}
+            hide-checkbox-column
+            columns={progressExampleColumns}
+            onselectedrec={handleSelectedRec}>
+        </c-custom-datatable> 
+    </div>
+</template>
